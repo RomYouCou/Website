@@ -1,0 +1,57 @@
+body {
+  font: 14px Helvetica, arial, freesans, clean, sans-serif;
+  margin: 0;
+}
+.clear {
+  clear: both;
+}
+.container {
+  width: 720px;
+  margin: auto;
+}
+header  {
+  background-color: #3371A2;
+  height: 160px;
+}
+header .logo {
+  margin: 10px 10px 10px 0;
+  float: left;
+}
+header nav {
+  margin-top: 25px;
+}
+header nav li {
+  display: inline;
+}
+header nav li a {
+  color: #eee;
+  background-color: #333;
+  padding: 10px;
+  text-decoration: none;
+}
+header nav li a:hover {
+  background-color: #111;
+}
+.main-nav {
+  float: left;
+  width: 360px;
+}
+.nav-right {
+  float: right;
+  width: 200px;
+  text-align: right;
+}
+.adspace {
+  margin-left: 150px;
+  position: relative;
+  height:100px;
+  top: 10px;
+}
+footer .container {
+  border-top: 1px solid #ddd;
+  padding: 10px 0;
+  color: #444;
+}
+.content {
+  padding: 10px 0;
+}
