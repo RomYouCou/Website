@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>{{title}} {{SITE_NAME}}</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <!-- TODO: META -->
   <!-- TODO: Open Graph Post -->
   <!-- TODO: Twitter Card Summaries -->
@@ -11,19 +12,25 @@
   <header>
     <div class="container">
       <a href="/">
-        <img src="http://files.ryc.org.uk/files/images/logo/ryclogo3.png" class="logo" style="height:140px;width:140px;">
+        <img src="http://files.ryc.org.uk/files/images/logo/ryclogo3.png" alt="Romsey Youth Council" class="logo" style="height:140px;width:140px;">
       </a>
       <h1 style="display:none;">Romsey Youth Council</h1>
-      <div class="adspace"><img src="http://placehold.it/570x100&text=Event+ad/Twitter Ticker"></div>
+      <div class="adspace">
+        <img src="http://placehold.it/570x100&amp;text=Event+ad/Twitter+Ticker" alt="Event ad/Twitter Ticker">
+      </div>
       <nav class="main-nav">
-        <li><a href="/">Home</a></li>
-        <li><a href="/beggarsfair">Beggars Fair</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/contact">Contact</a></li>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/beggarsfair">Beggars Fair</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
       </nav>
       <nav class="nav-right">
-        <li><a href="https://twitter.com/RomYouCou">Twitter</a></li>
-        <li><a href="https://facebook.com/RomYouCou">Facebook</a></li>
+        <ul>
+          <li><a href="https://twitter.com/RomYouCou">Twitter</a></li>
+          <li><a href="https://facebook.com/RomYouCou">Facebook</a></li>
+        </ul>
       </nav>
       <div class="clear"></div>
     </div>
@@ -42,7 +49,7 @@
   function onJQuery() {
     $(function() {
        // $('.adspace').html('<div style="color:#111;background-color:#eee;height: 100%;padding:10px;-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */  -moz-box-sizing: border-box;    /* Firefox, other Gecko */  box-sizing: border-box;         /* Opera/IE 8+ */">Lol</span>');
-    });
+     });
   }
   </script>
 </body>
