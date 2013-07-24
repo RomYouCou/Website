@@ -1,37 +1,68 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>{{title}} {{SITE_NAME}}</title>
+<head lang="en-us">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <!-- TODO: META -->
-  <!-- TODO: Open Graph Post -->
+
+  <title>{{page.title}} · {{site.name}}</title>
+
+  <meta name="description" content="Southampton Live is an interactive list of upcoming live music events in the Southampton area">
+
+  <meta name="google" value="notranslate" />
+
+  <meta property="og:title" content="{{site.title}}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://ryc.org.uk" />
+  <meta property="og:description" content="{{site.description}}" />
+  <meta property="og:locale" content="en_GB" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:site_name" content="{{site.name}}" />
+  <meta property="fb:admins" content="1089532097"/>
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@RomYouCou">
+  <meta name="twitter:title" content="{{page.title}}">
+  <meta name="twitter:description" content="Click to read more">
+  <meta name="twitter:image" content="http://files.ryc.org.uk/files/images/logo/ryclogo3.png">
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
   <!-- TODO: Twitter Card Summaries -->
   <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 <body>
   <header>
     <div class="container">
-      <a href="/">
-        <img src="http://files.ryc.org.uk/files/images/logo/ryclogo3.png" alt="Romsey Youth Council" class="logo" style="height:140px;width:140px;">
-      </a>
-      <h1 style="display:none;">Romsey Youth Council</h1>
-      <div class="adspace">
-        <img src="http://placehold.it/570x100&amp;text=Event+ad/Twitter+Ticker" alt="Event ad/Twitter Ticker">
+      <div class="logo-container">
+        <a href="/">
+          <img src="http://files.ryc.org.uk/files/images/logo/ryclogo3.png" alt="Romsey Youth Council" class="logo" style="height:140px;width:140px;">
+        </a>
       </div>
-      <nav class="main-nav">
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/beggarsfair">Beggars Fair</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/contact">Contact</a></li>
-        </ul>
-      </nav>
-      <nav class="nav-right">
-        <ul>
-          <li><a href="https://twitter.com/RomYouCou">Twitter</a></li>
-          <li><a href="https://facebook.com/RomYouCou">Facebook</a></li>
-        </ul>
-      </nav>
+      <h1 style="display:none;">Romsey Youth Council</h1>
+
+      <div class="header-container">
+
+        <div style="height: 115px;" class="ad">
+          Hello WOrld
+        </div>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/beggarsfair">Beggars Fair</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </nav>
+        <nav class="nav-right">
+          <ul>
+            <li><a href="https://twitter.com/RomYouCou">Twitter</a></li>
+            <li><a href="https://facebook.com/RomYouCou">Facebook</a></li>
+          </ul>
+        </nav>
+      </div>
       <div class="clear"></div>
     </div>
   </header>
@@ -47,9 +78,11 @@
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" onload="onJQuery();" defer></script>
   <script type="text/javascript">
   function onJQuery() {
-    $(function() {
-       // $('.adspace').html('<div style="color:#111;background-color:#eee;height: 100%;padding:10px;-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */  -moz-box-sizing: border-box;    /* Firefox, other Gecko */  box-sizing: border-box;         /* Opera/IE 8+ */">Lol</span>');
-     });
+    var a = function() {
+      $('.ad').html('Follow Us on Facebook');
+    }
+    setTimeout(a, 1000);
+    
   }
   </script>
 </body>

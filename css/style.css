@@ -18,7 +18,6 @@ header .logo {
   float: left;
 }
 header nav {
-  margin-top: 25px;
 }
 header nav li {
   display: inline;
@@ -33,20 +32,21 @@ header nav li a:hover {
   background-color: #111;
 }
 .main-nav {
+  clear: right;
   float: left;
   width: 360px;
 }
 .nav-right {
+  clear: right;
   float: right;
   width: 200px;
   text-align: right;
 }
-.adspace {
-  margin-left: 150px;
-  position: relative;
-  height:100px;
-  top: 10px;
+nav ul {
+  margin: 0;
+  padding: 0;
 }
+
 footer .container {
   border-top: 1px solid #ddd;
   padding: 10px 0;
@@ -54,4 +54,14 @@ footer .container {
 }
 .content {
   padding: 10px 0;
+}
+.logo-container {
+  width: 140px;
+  float: left;
+}
+.header-container {
+  width: 600px;
+  margin-left: 140px;
+  height: 140px;
+  padding: 10px;
 }
